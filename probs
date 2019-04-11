@@ -1,0 +1,73 @@
+# 문제
+
+// #1
+
+var arr = [1, 5, 17, 6, 10, 3, 2, 16, 9, 14]
+var sum = 0
+
+for item in arr{
+    if(item % 2 == 0){
+        sum += item
+    }
+}
+print(sum)
+
+// #2
+
+let numbers: [Int] = [0, 1, 2, 3, 4]
+var tripleNumbers: [Int] = [Int]()
+var stringsNumbers: [String] = [String]()
+for number in numbers {
+    tripleNumbers.append(number * 3)
+    stringsNumbers.append("\(number)")
+}
+print(tripleNumbers) 
+print(stringsNumbers)
+
+// #3
+
+var arr = [1, 5, 17, 6, 10, 3, 2, 16, 9, 14]
+var sum = 0
+
+for number in arr {
+    sum += number
+}
+print(sum)
+
+// #4
+
+var arr = [1,5,17,6,10,3,2,16,9,14];
+var ls:[Int] = [Int]()
+ 
+for item in arr{
+  if(item % 2 == 0){
+   ls.append(item);
+  }
+}
+
+var tmp = 0;
+
+print("찾은 짝수값 정렬전: ",ls)
+ 
+for i in 0..<ls.count{
+ for j in 0..<i{
+  if(ls[i] < ls[j]){
+    tmp = ls[i];
+    ls[i] = ls[j];
+    ls[j] = tmp;
+  }
+ }
+}
+
+print("찾은 짝수값 정렬후: ",ls)
+ 
+// #5
+ 
+let numbers: [Int] = [0, 1, 2, 3, 4, 5]
+var evenNumbers: [Int] = [Int]()
+
+for number in numbers {
+    if number % 2 != 0 { continue }
+    evenNumbers.append(number)
+}
+print(evenNumbers)
